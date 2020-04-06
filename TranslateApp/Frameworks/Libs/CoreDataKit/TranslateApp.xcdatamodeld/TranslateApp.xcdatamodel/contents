@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="History" representedClassName="CoreDataKit.History" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="fromText" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String"/>
+        <attribute name="toText" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Language" representedClassName="CoreDataKit.Language" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="History" positionX="-63" positionY="9" width="128" height="118"/>
+        <element name="Language" positionX="-63" positionY="-18" width="128" height="88"/>
+    </elements>
+</model>

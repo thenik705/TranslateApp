@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ImH-xS-vYw" customClass="TableSectionHeader" customModule="TranslateApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-iJ-24k">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="61"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-bz-ygy">
+                            <rect key="frame" x="20" y="5" width="93.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRL-jG-a4o">
+                            <rect key="frame" x="20" y="34" width="350" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="eau-ur-wLY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUo-rY-2Bk">
+                            <rect key="frame" x="133.5" y="2.5" width="236.5" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Y1O-aY-nng"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="См. все">
+                                <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedAllButtonAction:" destination="-2" eventType="touchUpInside" id="gKE-O3-E5p"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KRL-jG-a4o" firstAttribute="leading" secondItem="Fzk-iJ-24k" secondAttribute="leading" constant="20" id="GUs-pv-rYA"/>
+                        <constraint firstItem="FUo-rY-2Bk" firstAttribute="centerY" secondItem="yW2-bz-ygy" secondAttribute="centerY" id="IBm-Th-jdL"/>
+                        <constraint firstItem="yW2-bz-ygy" firstAttribute="top" secondItem="Fzk-iJ-24k" secondAttribute="top" constant="5" id="Np4-QB-UaU"/>
+                        <constraint firstItem="yW2-bz-ygy" firstAttribute="leading" secondItem="Fzk-iJ-24k" secondAttribute="leading" constant="20" id="RNg-zI-FeN"/>
+                        <constraint firstItem="KRL-jG-a4o" firstAttribute="top" secondItem="yW2-bz-ygy" secondAttribute="bottom" constant="5" id="XrM-jf-92b"/>
+                        <constraint firstItem="FUo-rY-2Bk" firstAttribute="leading" secondItem="yW2-bz-ygy" secondAttribute="trailing" constant="20" id="kQs-Kl-aPt"/>
+                        <constraint firstAttribute="trailing" secondItem="FUo-rY-2Bk" secondAttribute="trailing" constant="20" id="tJH-vi-79q"/>
+                        <constraint firstAttribute="trailing" secondItem="KRL-jG-a4o" secondAttribute="trailing" constant="20" id="z1k-Tg-VBv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fzk-iJ-24k" firstAttribute="trailing" secondItem="cG7-Db-edk" secondAttribute="trailing" id="B5m-JN-emi"/>
+                <constraint firstAttribute="bottom" secondItem="Fzk-iJ-24k" secondAttribute="bottom" id="hsp-FH-svI"/>
+                <constraint firstItem="Fzk-iJ-24k" firstAttribute="top" secondItem="ImH-xS-vYw" secondAttribute="top" id="lTS-wc-hPh"/>
+                <constraint firstItem="Fzk-iJ-24k" firstAttribute="leading" secondItem="ImH-xS-vYw" secondAttribute="leading" id="wZf-kP-kne"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="cG7-Db-edk"/>
+            <connections>
+                <outlet property="allButton" destination="FUo-rY-2Bk" id="Ssw-ap-ZVt"/>
+                <outlet property="background" destination="Fzk-iJ-24k" id="Ncq-sU-S9f"/>
+                <outlet property="subTitle" destination="KRL-jG-a4o" id="kjx-q7-K3f"/>
+                <outlet property="subTitleHeight" destination="eau-ur-wLY" id="MdJ-tA-W2W"/>
+                <outlet property="title" destination="yW2-bz-ygy" id="bNi-Yc-0f2"/>
+            </connections>
+            <point key="canvasLocation" x="7.2463768115942031" y="105.46875"/>
+        </view>
+    </objects>
+</document>
